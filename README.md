@@ -9,14 +9,14 @@ Save passenger's time by taking minimum time possible to drop off
 Take care of passenger's safety and traffic rules
 There are different aspects that need to be considered here while modeling an RL solution to this problem: rewards, states, and actions.
 
-#1. Rewards
+1. Rewards
 Since the agent (the imaginary driver) is reward-motivated and is going to learn how to control the cab by trial experiences in the environment, we need to decide the rewards and/or penalties and their magnitude accordingly. Here a few points to consider:
 
 The agent should receive a high positive reward for a successful dropoff because this behavior is highly desired
 The agent should be penalized if it tries to drop off a passenger in wrong locations
 The agent should get a slight negative reward for not making it to the destination after every time-step. "Slight" negative because we would prefer our agent to reach late instead of making wrong moves trying to reach to the destination as fast as possible
 
-#2. State Space
+2. State Space
 In Reinforcement Learning, the agent encounters a state, and then takes action according to the state it's in.
 
 The State Space is the set of all possible situations our taxi could inhabit. The state should contain useful information the agent needs to make the right action.
@@ -40,7 +40,7 @@ pickup
 dropoff
 This is the action space: the set of all the actions that our agent can take in a given state.
 
-#3. Action Space
+3. Action Space
 The agent encounters one of the 500 states and it takes an action. The action in our case can be to move in a direction or decide to pickup/dropoff a passenger. In other words, we have six possible actions:
 
 south
